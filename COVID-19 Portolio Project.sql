@@ -10,7 +10,7 @@ ORDER BY 3,4
 
 --Total Cases vs Total Deaths and the Rate of Death in the US
 
-SELECT location, date, total_cases, icu_patients, total_deaths, (total_deaths/total_cases)*100 as death_rate
+SELECT location, date, new_cases, icu_patients, new_deaths, (total_deaths/total_cases)*100 as death_rate
 FROM [OWID COVID-19]..COVID
 WHERE location like '%states%'
 
